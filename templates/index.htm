@@ -1,0 +1,23 @@
+{% extends 'base.html' %} #inheriting from base layout HTML
+
+{% block head %} #ginger syntax
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<br>
+<h1>Home Page</h1>
+<br>
+<main role="main">
+    <div class="jumbotron">
+        <div class="col-sm-8 mx-auto">
+            <h1>Welcome</h1>
+            <p>Welcome to the </p>
+            <p>Go visit us at our website <a href="https://google.com">google.com</a> to check out more cool stuff beyond just blogs.</p>
+            <p>
+                <a class="btn btn-primary" href="/posts" role="button">Go To Posts &raquo;</a>
+            </p>
+        </div>
+    </div>
+</main>
+{% endblock %}
